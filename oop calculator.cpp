@@ -24,6 +24,7 @@ class calc {
     }
 };
 int main (){
+    calc add;
     int r;
     int t;  
     cout<<"this is calculator"<<endl;
@@ -35,9 +36,19 @@ int main (){
     char o;
     cin>>o;
     if (o=='+'){
-        calc add;
-        add.divi(r,t);
+        add.adition(r,t);
     }
+    if (o=='-'){
+        add.subs(r,t);
+    }    
+    if (o=='*'){
+        add.mul(r,t);
+    } 
+    if (o=='/'){
+        add.divi(r,t);
+    } 
+    
+    
     return 0;
 
 
